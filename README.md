@@ -1,9 +1,9 @@
-#Nuke Auto Comp
+# Nuke Auto Comp
 *Automation tool that is designed to speed up workflow. Using the Nuke library this tool gets the channel data from 
 the selected input and shuffles out each channel into its own layer then plussing the layers back over the top of each 
 other to provide fine tune image manipulation on specified channels.*
 
-##GETTING STARTED
+## GETTING STARTED
 The first thing to do is to locate your .nuke folder. *(It is hidden by default.)*
 
 - **Windows:** C:\ Users\< username >\.nuke
@@ -32,9 +32,9 @@ nuke.pluginAddPath('./auto_comp_1.0.0')
 ```
 
 3. Place the auto_comp_1.0.0 folder into your .nuke directory
-4. Restart Nuke and start stamping!
+4. Restart Nuke.
 
-##HOW TO USE
+## HOW TO USE
 1. Select a multi-channeled EXR inside your node graph
 2. Navigate to the Python Tools menu bar at the top of the application
 3. Click the dropdown Auto Comp
@@ -43,12 +43,12 @@ nuke.pluginAddPath('./auto_comp_1.0.0')
 6. Click okay and wait for the magic.
 
 
-##Requirements
+## Requirements
 - The Foundry - Nuke Licence
 
 
-##Contact
-####Damien England
-####damien.england@icloud.com
-####[Website](http://www.damienengland.com.au) 
+## Contact
+#### Damien England
+#### damien.england@icloud.com
+#### [Website](http://www.damienengland.com.au) 
 
