@@ -73,7 +73,7 @@ def auto_comp():
     layers.sort()
 
     # Create panel to map AOVs
-    p = nuke.Pannel("Map AOVs")
+    p = nuke.Panel("Map AOVs")
     p.addSingleLineInput("Group", "lgt")
     p.addEnumerationPulldown("depth", ' '.join(channels))
     p.addBooleanCheckBox("invert depth", False)
@@ -143,10 +143,6 @@ def auto_comp():
     select_all_upstream(premult_node)
     space_nodes(3)
 
-
-# ADD TO NUKE MENU BAR
-m = nuke.menu("Nuke")
-m.addCommand("Python Tools/Auto Comp", auto_comp)
 
 
 

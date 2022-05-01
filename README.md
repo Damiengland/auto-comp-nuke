@@ -12,21 +12,27 @@ The first thing to do is to locate your .nuke folder. *(It is hidden by default.
 
 Look for a menu.py file.
 
-###Option 1 - Copy File
-1. Copy contents on this projects **main.py** and paste at bottom of **.nuke/menu.py**
-2. Restart Nuke Application
+### Installation
 
-###Option 2 - Reference File
-1. Create a folder inside the **.nuke** folder called scripts
-2. Copy & paste this projects **main.py** in the folder
-3. Import the **main.py** into the **.nuke/menu.py**
+1. Paste the below code into the **menu.py** file located in your .nuke directory
 
-   `from ./scripts/main.py import *`
-4. Paste the *Add to nuke menu bar* code from the bottom of this projects **main.py** into **.nuke/menu.py**
+```
+# Import Custom Modules
+from auto_comp_main import *
 
-    `m = nuke.menu("Nuke")`
+m = nuke.menu("Nuke")
+m.addCommand("Python Tools/Auto Comp", "auto_comp()")
+```
 
-    `m.addCommand("Python Tools/Auto Comp", auto_comp)`
+2. Paste the below code into the **init.py** file located in your .nuke directory
+
+```
+# Make sure you use the correct version
+nuke.pluginAddPath('./auto_comp_1.0.0')
+```
+
+3. Place the auto_comp_1.0.0 folder into your .nuke directory
+4. Restart Nuke and start stamping!
 
 ##HOW TO USE
 1. Select a multi-channeled EXR inside your node graph
